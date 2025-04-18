@@ -30,6 +30,13 @@ reusable functions that solve specific tasks. This activity encourages:
 // - Takes a name and a role (e.g., "Alice", "speaker")
 // - Returns a string in the format: "Name: Alice, Role: Speaker"
 
+let attendeeBadge = function(name, role) {
+    let roleCapitalized = role.charAt(0).toUpperCase() + String(role).slice(1);
+    return(`Name: ${name}, Role: ${roleCapitalized}`);
+}
+
+console.log(attendeeBadge("Alice","speaker"));
+
 // Steps:
 // 1. Define the function with two parameters.
 // 2. Format the output string properly.
