@@ -52,6 +52,18 @@ console.log(attendeeBadge("Alice","speaker"));
 // - Applies a 10% discount if attendees exceed 100.
 // - Returns the total cost.
 
+function eventTotals(attendees, cost) {
+    let totalEventCost = attendees * cost
+    if(attendees > 100){
+        adjustedEventCost = totalEventCost - (totalEventCost*.1);
+        return adjustedEventCost;
+    }
+    else{
+            return totalEventCost;
+    }
+};
+
+console.log(eventTotals(120,10));
 // Steps:
 // 1. Multiply attendees by cost.
 // 2. Check if attendee count is over 100.
@@ -66,6 +78,14 @@ console.log(attendeeBadge("Alice","speaker"));
 // - Takes an email string as input.
 // - Returns true if the email contains both "@" and "." characters.
 // - Returns false otherwise.
+
+function emailVerification(email){
+    String(email);
+    let emailValid = email.includes("@") && email.includes(".");
+    return emailValid;
+}
+
+console.log(emailVerification(`JohnSmith87@hotmail.com`));
 
 // Steps:
 // 1. Check if the string includes both "@" and ".".
