@@ -41,11 +41,16 @@ greet("Alice");
 greet("Bob");
 greet("Charlie");
 
+//REFLECTION:
+//The function in the reflection is the same aside from mine being an anonymous function.
+//I think this is because Pooja and myself were confusing regular functions and anonymous functions.
+//This difference has been made clear through seeing this example and others throughout the module.
 
+/*ORIGINAL CODE
 //console.log("Welcome, Alice!");
 //console.log("Welcome, Bob!");
 //console.log("Welcome, Charlie!");
-
+*/
 // Script 2 - Sum calculation
 const sum = function(num1, num2) {
    console.log(`The sum of ${num1} and ${num2} is ${num1 + num2}`);
@@ -53,6 +58,11 @@ const sum = function(num1, num2) {
 
 sum(5,10);
 
+//REFLECTION
+//This function has the same difference as the first. I also used console.log instead of return.
+//This shows that while my use of console.log in this use case is technically correct, in order to make sure my functions work properly outside of the console, I need to rely on the return function.
+
+//ORIGINAL CODE
 //let num1 = 5, num2 = 10;
 //let sum = num1 + num2;
 //console.log("The sum of 5 and 10 is " + sum);
@@ -67,8 +77,14 @@ const product = function(num1, num2) {
 
 product(5,10);
 
+//REFLECTION
+//This function has the same errors as the first two. Additionally, the second and third scripts I utilized back ticks and a printable statement to format the output differently.
+//This use of a return statement can be helpful in providing context, but should be utilized outside of the function.
 
+//ORIGINAL CODE
 // Script 4 - Print names from a list
+
+//ORIGINAL CODE
 //let names = ["Alice", "Bob", "Charlie"];
 //console.log("Names in the list:");
 //for (let i = 0; i < names.length; i++) {
@@ -84,6 +100,11 @@ function listNames(arrayNames) {
 let names = [`Alice`,`Bob`,`Charlie`];
 console.log(`Names on the List:`);
 listNames(names);
+
+//REFLECTION
+//This function is identical to the solution. I received help from Logan on this one as I was confused on how to get the information fed into the function.
+//While discussing it with Logan, I realized I was feeding an array of parameters in when I should have a single parameter and feed an array of arguments in afterwards.
+//This helped to give some context into how to structure parameters and arguments when utilizing functions.
 
 /*
 ===========================================
